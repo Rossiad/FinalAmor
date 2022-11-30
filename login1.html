@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/keyicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="slogin1.css">
+    <title>Entrada</title>
+</head>
+<body>
+    <divc class="container">
+
+        <div class="right-login">
+
+            <h1>Entrada</h1>
+            <p>Coloque <span>local</span> e <span>chave corretas</span> para prosseguir adiante.</p>
+
+            <div class="textfield">
+
+                <label for="Nome"></label>
+                <input class="box" type="text" placeholder="Local" id="ilogin">
+                
+            </div>
+
+            <div class="textfield">
+
+                <label for="Senha"></label>
+                <input class="box" type="password" placeholder="Chave" id="isenha">
+
+            </div>
+
+                <input class="lgn" onclick="logar()" type="submit" value="Começar">
+
+        </div>
+
+        <div class="left-login">
+
+            <div class="hint">
+                <p class="thint">A semente do agora. <span class="trs"></span> e <span class="trs2"></span> tudo se deu como broto, pela primeiríssima vez.</p>
+            </div>
+
+            <a href="#">
+                <img height="220px" src="images/heart-with-ribbon_1f49d.png" alt="Heart with heart-with-ribbon_1f49d">
+            </a>
+
+        </div>
+    </divc>
+    <script>
+        function logar(){
+
+            var senha = document.getElementById('isenha').value;
+            var login = document.getElementById('ilogin').value;
+
+            if(senha == '31082021' && login == 'whatsapp') {
+                location.href = "home.html"
+            } else if (senha != '31082021' && login != 'whatsapp') {
+                alert('Chave e Local incorretos')
+            } else if (senha == '31082021' && login != 'whatsapp') {
+                alert('Local incorreto')
+            } else {
+                alert('Chave incorreta')
+            }
+        }
+    </script>
+</body>
+</html>

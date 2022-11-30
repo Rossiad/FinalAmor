@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Uni Sans Heavy";
+    src: url(font/Uni\ Sans\ Heavy.otf) format('Opentype');
+}
+
+@font-face {
+    font-family: "Uni Sans Heavy Italic";
+    src: url(font/Uni\ Sans\ Heavy\ Italic.otf) format('Opentype');
+}
+
+@font-face {
+    font-family: "Uni Sans Thin";
+    src: url(font/Uni\ Sans\ Thin.otf) format('Opentype');
+}
+
+@font-face {
+    font-family: "Uni Sans Thin Italic";
+    src: url(font/Uni\ Sans\ Thin\ Italic.otf) format('Opentype');
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1d1d1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border: 2px solid #d1d1d1;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-family: 'Uni Sans Heavy', sans-serif;
+    overflow: hidden;
+    position: relative;
+    height: 750px;
+    width: 100vw;
+    padding: 20px;
+    color: #fff;
+    background-color: #ED2951;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.speciali {
+    z-index: 0;
+    position: absolute;
+    height: 280px;
+    bottom: 30px;
+}
+
+
+header h1 {
+    z-index: 1;
+    width: 700px;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 40px;
+}
+
+.title {
+    font-size: 1.19em;
+    font-style: italic;
+    font-family: 'Uni Sans Thin Italic';
+}
+
+header p {
+    z-index: 1;
+    font-family: 'Poppins';
+    width: 750px;
+}
+
+.sec-1 {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.csec-1 {
+    margin: 30px;
+    background-color: rgba(68, 68, 68, 0.425);
+    backdrop-filter: 5px;
+    -webkit-backdrop-filter: blur(5px);
+    height: 200px;
+    width: 1000px;
+    border-radius: 50px;
+}
+
+.sec-1 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #ED2951;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sec-2 {
+    width: 100vw;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 70px;
+    margin-top: 50px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    width: 720px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.imgss {
+    background-color: #ED2951;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 90px;
+    width: 90px;
+    transition: .3s;
+}
+
+.imgss:hover {
+    cursor: pointer;
+    background-color: #373737;
+
+}
+
+.imgsss{
+    width: 70px;
+}
+
+.csec-2 {
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+
+.sec-2 p {
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 45px;
+}
+
+div.black {
+    height: 300px;
+    width: 100vw;
+    background-color: #222;
+}
+
+.sec-3 {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED2951;
+    height: 700px;
+    width: 100vw;
+    padding: 50px;
+}
+
+.csec-3 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.csec-3 video {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.csec-3 img {
+    position: absolute;
+    rotate: -20deg;
+    width: 200px;
+    right: -25px;
+    bottom: -20px;
+}
+
+.right-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+}
+
+.right-3 p {
+    width: 460px;
+    font-size: 1.em;
+    text-align: justify;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.right-3 h1 {
+    font-size: 2.5em;
+    margin: 10px 0px;
+}
+
+
+.sec-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    height: 380px;
+    width: 100vw;
+}
+
+.csec-4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+}
+
+.csec-4 p {
+    color: #fff;
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+.sec-5 {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED2951;
+    color: #fff;
+    height: 720px;
+    width: 100vw;
+    padding: 50px;
+}
+
+.csec-5 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.csec-5 img {
+    border-radius: 20px;    
+}
+
+.csec-5 .xesque {
+    position: absolute;
+    rotate: -20deg;
+    width: 250px;
+    left: -50px;
+    bottom: -20px;
+}
+
+.right-5 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+}
+
+.right-5 p {
+    width: 460px;
+    font-size: 1.15em;
+    text-align: justify;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.right-5 h1 {
+    font-size: 2.5em;
+    margin: 10px 0px;
+}
+
+footer {
+    background-color: #373737;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p span {
+    color: #ED2951;
+    font-weight: 600;
+}
+
+.white {
+    padding: 0px 3px;
+    color: #000;
+    background-color: #fff;
+}
